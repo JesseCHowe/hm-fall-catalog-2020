@@ -16,7 +16,6 @@ const Main = () => {
         <Route path="/men" component={Men} />
         <Route path='/product/:productId' component={ProductInfo}/>
         <Route path="/women" component={Women} />
-        <Route path="/" component={Home} />
       </Switch>
     </div>
   );
