@@ -1,6 +1,6 @@
 import * as actionTypes from "../actions/actionTypes";
 
-const initialState = [];
+const initialState = [{ name: "test", qty: 2, price: 23.45 }];
 
 const cart = (state = initialState, action) => {
   const index = state.findIndex((o) => o.name === action.product);
@@ -12,8 +12,7 @@ const cart = (state = initialState, action) => {
       if (index === -1) {
         return state.concat({
           name: action.product.name,
-          price: 12,
-          id: action.product.id,
+          price: action.product.price,
           qty: 1,
         });
       } else {
