@@ -7,7 +7,7 @@ import Women from "./containers/Women";
 import ProductInfo from "./containers/ProductInfo";
 import { Switch, Route } from "react-router-dom";
 
-function App() {
+const App = () => {
   return (
     <React.Fragment>
       <Switch>
@@ -19,6 +19,6 @@ function App() {
       </Switch>
     </React.Fragment>
   );
-}
+};
 
 export default App;
