@@ -1,18 +1,52 @@
 [
   {
-    "sku": "DEMO001",
-    "name": "This Pretty Plant",
-    "description": "Look at this pretty plant. Photo by Galina N on Unsplash.",
-    "image": "https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=600&h=600&q=80",
-    "amount": 1000,
+    "id": 1,
+    "name": "Long Cardigan",
+    "description": "Long, fine-knit cardigan in soft fabric with wool content. Dropped shoulders, long sleeves, and no buttons. Ribbing at cuffs, back of neck, and hem. Polyester content is recycled.",
+    "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F3b%2F92%2F3b9284073aadf0cea6a0103a59b12c21cf0d74dc.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_basics_cardigansjumpers%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+    "amount": 1599,
+    "category": "womens",
+    "color": "beige",
     "currency": "USD"
   },
   {
-    "sku": "DEMO002",
-    "name": "Adventure Mug",
-    "description": "We’re going on an adventure! Photo by Annie Spratt on Unsplash.",
-    "image": "https://images.unsplash.com/photo-1454329001438-1752daa90420?auto=format&fit=crop&w=600&h=600&q=80",
-    "amount": 1500,
+    "id": 2,
+    "name": "Loose-knit Cardigan",
+    "description": "Long-sleeved cardigan in a soft, loose knit with no buttons. Polyester content is recycled.",
+    "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fb4%2F73%2Fb473c2647d8b4585686c8e6eac88dc9e380cc80c.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_cardigansjumpers_cardigans%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+    "amount": 1039,
+    "category": "womens",
+    "color": "green",
+    "currency": "USD"
+  },
+  {
+    "id": 3,
+    "name": "Knit Cardigan",
+    "description": "Long cardigan in soft knit fabric with wool content. Long sleeves, high slits at sides, and ribbing at cuffs and hem. No buttons. Polyester content is recycled.",
+    "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F3d%2F98%2F3d98a637e8ef5417048180a8fd2d6446e80b9bc6.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+    "amount": 1999,
+    "category": "womens",
+    "color": "black",
+    "currency": "USD"
+  },
+  {
+    "id": 4,
+    "name": "Slacks",
+    "description": "Ankle-length slacks in woven, stretch fabric. Regular waist, concealed elasticized waistband, and zip fly with concealed hook-and-eye fastener. Side pockets, mock welt back pockets, and tapered legs.",
+    "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F45%2F14%2F451418c637e8ff53333439674d6bd89df46afc61.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_trousers_chinosslacks%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+    "amount": 1599,
+    "category": "womens",
+    "color": "blue",
+    "currency": "USD"
+  },
+  {
+    "id": 5,
+    "name": "Ankle-length Slacks",
+    "description": "Slacks in woven stretch fabric. Regular waist, elastication at back of waistband, and mock welt pocket at back. Slim, ankle-length legs with creases.",
+    "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fc6%2F76%2Fc676a59a5b4c53ecc6440c6732061b34ba19239c.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_trousers_chinosslacks%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+    "amount": 1199,
+    "category": "womens",
+    "color": "red",
     "currency": "USD"
   }
 ]

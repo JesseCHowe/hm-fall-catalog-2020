@@ -1,10 +1,11 @@
 import React from "react";
 import "./App.css";
-import Home from "./containers/Home";
-import Cart from "./containers/Cart";
-import Men from "./containers/Men";
-import Women from "./containers/Women";
-import ProductInfo from "./containers/ProductInfo";
+import Home from "./containers/Home/Home";
+import Cart from "./containers/Cart/Cart";
+import FallEssentials from "./containers/FallEssentials/FallEssentials";
+import KnitFactor from "./containers/KnitFactor/KnitFactor";
+import TheCompleteCoat from "./containers/TheCompleteCoat/TheCompleteCoat";
+import ProductInfo from "./containers/ProductInfo/ProductInfo";
 import { Switch, Route } from "react-router-dom";
 
 const App = () => {
@@ -12,9 +13,10 @@ const App = () => {
     <React.Fragment>
       <Switch>
         <Route path="/cart" component={Cart} />
-        <Route path="/men" component={Men} />
+        <Route path="/fallessentials" component={FallEssentials} />
         <Route path="/product/:productId" component={ProductInfo} />
-        <Route path="/women" component={Women} />
+        <Route path="/knit" component={KnitFactor} />
+        <Route path="/the-complete-coat" component={TheCompleteCoat} />
         <Route exact path="/" component={Home} />
       </Switch>
     </React.Fragment>

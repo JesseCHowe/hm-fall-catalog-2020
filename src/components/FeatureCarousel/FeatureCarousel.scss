@@ -1,0 +1,46 @@
+.feature-clothing-roll {
+  max-width: 950px;
+  margin: 3rem auto;
+  display: grid;
+  grid-template-columns: 1fr 5fr 5fr 1fr;
+  transition: 1s;
+  .btn-container {
+    display: flex;
+    align-items: center;
+  }
+  button {
+    height: fit-content;
+    width: fit-content;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    background: none;
+    bordeR: none;
+  }
+  .text-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .text-box {
+      padding: 1rem;
+      box-sizing: border-box;
+      position: relative;
+      transform: translate(0, 3rem);
+
+      width: 90%;
+      .item-number {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(-15%, -6rem);
+        font-size: 6rem;
+        .no {
+          font-size: 2rem;
+        }
+      }
+      .item-name {
+        font-size: 2rem;
+        font-weight: bold;
+      }
+    }
+  }
+}
