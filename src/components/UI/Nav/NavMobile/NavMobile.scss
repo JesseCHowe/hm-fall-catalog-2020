@@ -1,0 +1,133 @@
+.navMobile-btns {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  left: 0;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 900;
+  .navMobile-cart-btn {
+    background: none;
+    border: none;
+    color: var(--primary-light);
+    display: block;
+    outline: none;
+    &:focus {
+      background: var(--primary-highlight);
+      color: var(--primary-dark);
+    }
+  }
+  .navMobile-modal-btn {
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    height: 45px;
+    justify-content: space-around;
+    outline: none;
+    width: 45px;
+    .fa {
+      background: var(--primary-highlight);
+      display: block;
+      height: 3px;
+      width: 100%;
+      &:last-child {
+        width: 80%;
+      }
+    }
+    &:focus {
+      background: var(--primary-highlight);
+      .fa {
+        background: var(--primary-dark);
+      }
+    }
+  }
+}
+
+.navMobile-modal-container {
+  background: #fff;
+  display: block;
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 320px;
+  z-index: 1000;
+  ul {
+    align-items: center;
+    background-color: var(--primary-light);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  li {
+    align-items: center;
+    border-bottom: 1px solid var(--primary-dark);
+    display: flex;
+    height: 100%;
+    > * {
+      box-sizing: border-box;
+      display: block;
+      padding: 1rem;
+      width: 100%;
+      span {
+        max-width: fit-content;
+      }
+    }
+  }
+  .exit-btn {
+    background: none;
+    border: none;
+    max-width: fit-content;
+    outline: none;
+    &:focus {
+      background: var(--primary-highlight);
+      color: var(--primary-dark);
+    }
+  }
+  .navMobile-modal {
+    background: var(--primary-light);
+    box-sizing: border-box;
+    font-family: var(--primary-sans-serif);
+    height: 100vh;
+    padding: 1rem;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  .overlay-open {
+    background: rgba(0, 0, 0, 0.5);
+    display: block;
+    height: 100vh;
+    left: 320px;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 900;
+  }
+}
+
+.navMobile-btn-bg {
+  background: var(--primary-dark);
+  float: left;
+  height: 77px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 850;
+}
+
+@media (min-width: 700px) {
+  .navMobile {
+    display: none;
+  }
+}

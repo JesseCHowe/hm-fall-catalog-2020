@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Nav from "../../components/UI/Nav/Nav";
 import ProductsList from "../../components/Products/ProductsList";
 import "./KnitFactor.scss";
+import TheKnitFactorLogo from "../../components/TitleDesigns/TheKnitFactorLogo/TheKnitFactorLogo";
 
 const KnitFactor = () => {
   let [productData, setProductData] = useState(null);
@@ -16,7 +17,7 @@ const KnitFactor = () => {
     await fetch("/.netlify/functions/get-products")
       .then((res) => res.json())
       .then((data) => {
-        const womensProducts = data.filter((o) => o.category === "womens");
+        const womensProducts = data.filter((o) => o.category === "the knit factor");
         setProductData(womensProducts);
       })
       .catch((err) => console.error(err));
@@ -31,11 +32,7 @@ const KnitFactor = () => {
     <div>
       <div id="the-knit-factor">
         <div className="content">
-          <h1>
-            <span>The</span>
-            <span className="knit">KNIT</span>
-            <span className="factor">FACTOR</span>
-          </h1>
+          <TheKnitFactorLogo mode="main"/>
           <p>
             Layer up in a way that reflects your style with our cozy hoodies,
             sweaters and cardigans for women. Discover the latest prints and

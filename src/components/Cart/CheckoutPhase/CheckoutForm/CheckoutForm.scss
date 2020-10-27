@@ -1,0 +1,36 @@
+#payment-form {
+  box-sizing: border-box;
+  height: fit-content;
+  max-width: 500px;
+  width: 100%;
+  z-index: 800;
+  button {
+    margin: 1rem auto;
+  }
+}
+
+.exit-btn-container {
+  align-items: center;
+  border-bottom: 1px solid var(--primary-neutral);
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+}
+
+.FormGroup {
+  border-style: none;
+  color: var(--primary-dark);
+  padding: 0;
+}
+
+.StripeElement--webkit-autofill {
+  background: transparent !important;
+}
+
+.StripeElement {
+  border-bottom: 1px solid var(--primary-neutral);
+  box-sizing: border-box;
+  padding: 0.4rem;
+  width: 100%;
+}

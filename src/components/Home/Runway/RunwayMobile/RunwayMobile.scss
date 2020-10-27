@@ -1,0 +1,150 @@
+#runway-mobile {
+  display: none;
+  margin: 1rem auto;
+  max-width: 500px;
+  padding: 0.5rem;
+  .description-container,
+  .title-container {
+    box-sizing: border-box;
+    padding: 0 1rem;
+  }
+}
+.slideshow-container {
+  height: 300px;
+  margin: auto;
+  max-width: 500px;
+  overflow: hidden;
+  position: relative;
+  .slide {
+    height: 300px;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  .hidden-slide {
+    display: none;
+  }
+  img {
+    border: 1rem solid var(--primary-dark);
+    box-sizing: border-box;
+    vertical-align: middle;
+    width: 100%;
+  }
+  p {
+    position: absolute;
+    top: 0;
+  }
+  .prev,
+  .next {
+    background: var(--primary-dark);
+    border: none;
+    color: lightgray;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: -22px;
+    padding: 16px;
+    position: absolute;
+    top: 50%;
+    transition: 0.6s ease;
+    user-select: none;
+    width: auto;
+  }
+  .next {
+    right: 0;
+  }
+  .prev:focus,
+  .next:focus {
+    background: var(--primary-highlight);
+    color: var(--primary-dark);
+    outline: none;
+  }
+  .prev:hover,
+  .next:hover {
+    background: var(--primary-highlight);
+    color: var(--primary-dark);
+  }
+}
+.btn-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+.fall-essentials {
+  display: block;
+  margin: 0;
+  span {
+    display: block;
+    font-size: 3rem;
+  }
+  .essentials {
+    color: #dbc78e;
+  }
+}
+.prev-slide-forward,
+.active-slide-forward,
+.prev-slide-backward,
+.active-slide-backward {
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  display: block;
+  -webkit-animation-duration: 1.5s;
+}
+.prev-slide-forward {
+  animation-name: prevForward;
+  -webkit-animation-name: prevForward;
+}
+@keyframes prevForward {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    display: none;
+    transform: translateX(-100%);
+  }
+}
+.active-slide-forward {
+  animation-name: activeForward;
+  -webkit-animation-name: activeForward;
+}
+@keyframes activeForward {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+.prev-slide-backward {
+  animation-name: prevBackward;
+  -webkit-animation-name: prevBackward;
+}
+@keyframes prevBackward {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    display: none;
+    transform: translateX(100%);
+  }
+}
+.active-slide-backward {
+  animation-name: activeBackward;
+  -webkit-animation-name: activeBackward;
+}
+@keyframes activeBackward {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@media (max-width: 700px) {
+  #runway-mobile {
+    display: block;
+  }
+}

@@ -13,11 +13,6 @@ const Jumbotron = () => {
       <div className="cover">
         <div className="container">
           <div className="header-text">
-            <img
-              className="logo"
-              src="https://cdn.freebiesupply.com/logos/large/2x/h-m-logo-black-and-white.png"
-              alt="logo"
-            />
             <span className="year">2020</span>
             <h1>Fall Vibes</h1>
             <p>

@@ -6,41 +6,10 @@
   justify-content: center;
   overflow: hidden;
   width: 100%;
-  h1 {
-    color: #dbc78e;
-    font-size: 9rem;
-    font-weight: 100;
-    .fall {
-      color: #fff;
-      font-size: 9rem;
-      font-weight: 100;
-    }
-  }
-}
-
-@media (max-width: 920px) {
-  #fall-essenitals-header {
-    h1 {
-      font-size: 5rem;
-      .fall {
-        font-size: 4rem;
-      }
-    }
-  }
 }
 
 @media (max-width: 700px) {
   #fall-essenitals-header {
     height: 100vh;
-  }
-}
-@media (max-width: 500px) {
-  #fall-essenitals-header {
-    h1 {
-      font-size: 3rem;
-      .fall {
-        font-size: 2rem;
-      }
-    }
   }
 }

@@ -1,87 +1,43 @@
-import React from "react";
-import "./Runway.scss";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import RunwayMobile from "./RunwayMobile/RunwayMobile";
+import RunwayDesktop from "./RunwayDesktop/RunwayDesktop";
 
 const Runway = () => {
-  const items = [0, 1, 2, 3, 4, 5, 6, 7];
-  return (
-    <React.Fragment>
-      <div className="runway">
-        <div className="sel-color">
-          <span className="fall-essentials">
-            <span>Fall</span>
-            <span className="essentials">Essentials</span>
-          </span>
-          <p>
-            Layer up in a way that reflects your style with our cozy hoodies,
-            sweaters and cardigans for women. Discover the latest prints and
-            colors, mixed with timeless knits and neutral wardrobe basics that
-            will last season after season. Whether you prefer off-the-shoulder,
-            oversized or fitted styles, we’ve got you covered this fall.{" "}
-          </p>
-          <button>Explore</button>
-        </div>
-        <div className="clothing">
-          {items.map((item) => {
-            return <Link key={`test1-${item}`} to={`/product/1`} />;
-          })}
-        </div>
-      </div>
+  let [productData, setProductData] = useState(null);
 
-      <div className="runway">
-        <div className="sel-color">
-          <span className="the-knit-factor">
-            <span className="the">The</span>
-            <span className="knit">KNIT</span>
-            <span className="factor">FACTOR</span>
-          </span>
-          <p>
-            Layer up in a way that reflects your style with our cozy hoodies,
-            sweaters and cardigans for women. Discover the latest prints and
-            colors, mixed with timeless knits and neutral wardrobe basics that
-            will last season after season. Whether you prefer off-the-shoulder,
-            oversized or fitted styles, we’ve got you covered this fall.{" "}
-          </p>
-          <button>Explore</button>
-        </div>
-        <div className="clothing">
-          {items.map((item) => {
-            return <Link key={`test2-${item}`} to={`/product/1`} />;
-          })}
-        </div>
-      </div>
+  useEffect(() => {
+    if (!productData) {
+      loadProducts();
+    }
+  });
 
-      <div className="runway">
-        <div className="sel-color">
-          <span className="the-complete-coat">
-            <div className="wrapper">
-              <h3>The Complete</h3>
-              <div className="content2">
-                <h1>
-                  CO
-                  <br />
-                  AT
-                </h1>
-              </div>
-            </div>
-          </span>
-          <p>
-            Layer up in a way that reflects your style with our cozy hoodies,
-            sweaters and cardigans for women. Discover the latest prints and
-            colors, mixed with timeless knits and neutral wardrobe basics that
-            will last season after season. Whether you prefer off-the-shoulder,
-            oversized or fitted styles, we’ve got you covered this fall.{" "}
-          </p>
-          <button>Explore</button>
-        </div>
-        <div className="clothing">
-          {items.map((item) => {
-            return <Link key={`test3-${item}`} to={`/product/1`} />;
-          })}
-        </div>
-      </div>
-    </React.Fragment>
-  );
+  async function loadProducts() {
+    await fetch("/.netlify/functions/get-products")
+      .then((res) => res.json())
+      .then((data) => {
+        const fallEssentials = data.filter((o) => o.category === "fall essentials").slice(0,7);
+        const theKnitFactor = data.filter((o) => o.category === "the knit factor").slice(0,7);
+        const theCompleteCoat = data.filter((o) => o.category === "the complete coat").slice(0,7);
+        setProductData({
+          fallEssentials: fallEssentials,
+          theKnitFactor: theKnitFactor,
+          theCompleteCoat: theCompleteCoat,
+        });
+      })
+      .catch((err) => console.error(err));
+  }
+
+  let items;
+  productData
+    ? (items = (
+        <React.Fragment>
+          <RunwayDesktop products={productData} />
+          <RunwayMobile products={productData} />
+        </React.Fragment>
+      ))
+    : (items = <p>Waiting...</p>);
+
+  return <React.Fragment>{items}</React.Fragment>;
 };
 
 export default Runway;

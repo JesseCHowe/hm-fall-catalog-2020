@@ -3,12 +3,17 @@
   overflow: hidden;
   width: 100%;
   .logo {
+    box-sizing: border-box;
     max-width: 60px;
-    opacity: 0.3;
+    opacity: 0.5;
     position: absolute;
-    right: 0;
+    right: 1rem;
     top: 1rem;
     width: 100%;
+    z-index: 100;
+    img {
+      width: 100%;
+    }
   }
   .year {
     display: block;
@@ -27,20 +32,21 @@
       display: flex;
       height: 100%;
       justify-content: flex-start;
-      position: relative;
-      max-width: 1200px;
       margin: 0 auto;
+      max-width: 1200px;
+      position: relative;
       .header-text {
-        width: 100%;
         max-width: 500px;
         padding: 1rem;
+        width: 100%;
         h1 {
           font-size: 6rem;
           margin: 0;
         }
         p {
-          font-size: 1.2rem;
-          line-height: 1.5rem;
+          font-size: 1.1rem;
+          line-height: 2.5rem;
+          margin: 0;
         }
       }
     }
@@ -51,8 +57,8 @@
   #jumbotron {
     height: 100vh;
     .logo {
-      right: 0.5rem;
-      top: 0.5rem;
+      right: 1rem;
+      top: 1rem;
     }
     .cover {
       height: 100vh;

@@ -1,0 +1,114 @@
+.tcc-main {
+  margin: 0 auto;
+  position: relative;
+  width: fit-content;
+  h1 {
+    background-clip: text;
+    background-color: #ae8484;
+    background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h16v2h-6v6h6v8H8v-6H2v6H0V0zm4 4h2v2H4V4zm8 8h2v2h-2v-2zm-8 0h2v2H4v-2zm8-8h2v2h-2V4z' fill='%23700000' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+    background-position: center;
+    background-repeat: repeat;
+    font-size: 15rem;
+    font-weight: bold;
+    line-height: 15rem;
+    margin: 0;
+    margin-left: 4rem;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-text-fill-color: transparent;
+    -webkit-font-smoothing: antialiased;
+  }
+  .the-complete {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    transform: rotate(-90deg);
+    transform-origin: top left;
+    span {
+      font-size: 2rem;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .tcc-main {
+    h1 {
+      font-size: 22vw;
+      line-height: 22vw;
+      margin-left: 6vw;
+    }
+    .the-complete {
+      span {
+        font-size: 3vw;
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .tcc-main {
+    h1 {
+      font-size: 38vw;
+      line-height: 38vw;
+      margin-left: 6vw;
+      margin-top: 3rem;
+    }
+    .the-complete {
+      span {
+        font-size: 3vw;
+      }
+    }
+  }
+}
+
+.tcc-runway {
+  width: fit-content;
+  position: relative;
+  h1 {
+    font-size: 7rem;
+    line-height: 7rem;
+    margin: 0;
+    margin-left: 2rem;
+    text-align: center;
+    background-color: #ae8484;
+    background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h16v2h-6v6h6v8H8v-6H2v6H0V0zm4 4h2v2H4V4zm8 8h2v2h-2v-2zm-8 0h2v2H4v-2zm8-8h2v2h-2V4z' fill='%23700000' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+    background-repeat: repeat;
+    background-clip: text;
+    background-position: center;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+  }
+  .the-complete {
+    position: absolute;
+    transform: rotate(-90deg);
+    transform-origin: top left;
+    left: 0;
+    bottom: 0;
+    span {
+      font-size: 1rem;
+    }
+  }
+}
+
+.tcc-nav {
+  color: var(--primary-dark);
+  position: relative;
+  width: fit-content;
+  h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.5rem;
+    margin: 0;
+    margin-left: 0rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .the-complete {
+    display: none;
+    span {
+      font-size: 0.5rem;
+    }
+  }
+}

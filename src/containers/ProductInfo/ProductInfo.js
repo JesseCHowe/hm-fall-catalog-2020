@@ -32,7 +32,7 @@ const ProductInfo = ({ match }) => {
     ? (item = (
         <div id="test-page">
           <div className="test-item">
-            <Box color={productData.color} className="test-box">
+            <Box className="test-box">
               <ItemNo color={productData.color} className="test-no">
                 <span className="no">no.</span>
                 {productData.id}
@@ -48,8 +48,8 @@ const ProductInfo = ({ match }) => {
                     className="add-to-cart-btn"
                     onClick={() => dispatch(addToCart(productData))}
                   >
-                    <span className="add-to-cart">Add To Cart</span> $
-                    {productData.amount / 100}
+                    <span className="add-to-cart">Add To Cart</span> ($
+                    {productData.amount / 100})
                   </FallButton>
                 </div>
               </div>

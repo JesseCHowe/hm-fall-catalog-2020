@@ -1,52 +1,623 @@
 [
-  {
-    "id": 1,
-    "name": "Long Cardigan",
-    "description": "Long, fine-knit cardigan in soft fabric with wool content. Dropped shoulders, long sleeves, and no buttons. Ribbing at cuffs, back of neck, and hem. Polyester content is recycled.",
-    "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F3b%2F92%2F3b9284073aadf0cea6a0103a59b12c21cf0d74dc.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_basics_cardigansjumpers%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
-    "amount": 1599,
-    "category": "womens",
-    "color": "beige",
-    "currency": "USD"
-  },
-  {
-    "id": 2,
-    "name": "Loose-knit Cardigan",
-    "description": "Long-sleeved cardigan in a soft, loose knit with no buttons. Polyester content is recycled.",
-    "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fb4%2F73%2Fb473c2647d8b4585686c8e6eac88dc9e380cc80c.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_cardigansjumpers_cardigans%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
-    "amount": 1039,
-    "category": "womens",
-    "color": "green",
-    "currency": "USD"
-  },
-  {
-    "id": 3,
-    "name": "Knit Cardigan",
-    "description": "Long cardigan in soft knit fabric with wool content. Long sleeves, high slits at sides, and ribbing at cuffs and hem. No buttons. Polyester content is recycled.",
-    "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F3d%2F98%2F3d98a637e8ef5417048180a8fd2d6446e80b9bc6.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
-    "amount": 1999,
-    "category": "womens",
-    "color": "black",
-    "currency": "USD"
-  },
-  {
-    "id": 4,
-    "name": "Slacks",
-    "description": "Ankle-length slacks in woven, stretch fabric. Regular waist, concealed elasticized waistband, and zip fly with concealed hook-and-eye fastener. Side pockets, mock welt back pockets, and tapered legs.",
-    "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F45%2F14%2F451418c637e8ff53333439674d6bd89df46afc61.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_trousers_chinosslacks%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
-    "amount": 1599,
-    "category": "womens",
-    "color": "blue",
-    "currency": "USD"
-  },
-  {
-    "id": 5,
-    "name": "Ankle-length Slacks",
-    "description": "Slacks in woven stretch fabric. Regular waist, elastication at back of waistband, and mock welt pocket at back. Slim, ankle-length legs with creases.",
-    "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fc6%2F76%2Fc676a59a5b4c53ecc6440c6732061b34ba19239c.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_trousers_chinosslacks%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
-    "amount": 1199,
-    "category": "womens",
-    "color": "red",
-    "currency": "USD"
-  }
+{
+  "id": 1,
+  "name": "Cable-knit Sweater",
+  "description": "Relaxed-fit sweater in soft, cable-knit fabric with wool content. Long, wide raglan sleeves and ribbing at neckline, cuffs, and hem. Polyester content is recycled.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=source[/ad/02/ad021eed93779e5b24a9dfef881933ad2b81799c.jpg],origin[dam],category[ladies_cardigansjumpers_jumpers],type[LOOKBOOK],res[y],hmver[1]&call=url[file:/product/main]",
+  "amount": 3999,
+  "category": "fall essentials",
+  "currency": "USD"
+},
+{
+  "id": 2,
+  "name": "Mom High Ankle Jeans",
+  "description": "5-pocket, ankle-length jeans in washed stretch cotton denim. Extra-high waist and straight legs. Slightly looser fit. Cotton content is partly recycled.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fa2%2Fda%2Fa2da79f099ae2298b1a8bee182ba86cb331e5914.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_jeans_loose%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+  "amount": 2999,
+  "category": "fall essentials",
+  "currency": "USD"
+},
+{
+  "id": 3,
+  "name": "Stand-up-collar Puffer Jacket",
+  "description": "Quilted, padded jacket in woven fabric. Stand-up collar, zipper at front with wind flap and concealed snap fasteners, and side pockets. Elasticized cuffs and hem. Lining and padding made from recycled polyester.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fed%2Fea%2Fedea296fc4a566aad7e6020368298dd1e215f93d.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+  "amount": 4999,
+  "category": "fall essentials",
+  "currency": "USD"
+},
+{
+  "id": 4,
+  "name": "Embrace High Ankle Jeans",
+  "description": "5-pocket, ankle-length jeans in washed, stretch denim. High waist, zip fly with button, and super-skinny legs. Cotton content is partly recycled. Embrace – denim with smart stretch function that molds to body for a comfortable, flattering silhouette.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F5f%2Faa%2F5faabcd84f5d4d6ad349719ea069db65b0fe9603.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_jeans_skinny%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+  "amount": 3999,
+  "category": "fall essentials",
+  "currency": "USD"
+},
+{
+  "id": 5,
+  "name": "Balloon-sleeved Dress",
+  "description": "Straight-cut, calf-length dress in airy, woven fabric. Small opening at back of neck with button, 3/4-length balloon sleeves with narrow elastic at cuffs, and slit at back of hem. Unlined.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Ff5%2F87%2Ff587f7e6d02c7d6c9f888f7d2424ce2b6e1564fd.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_dresses_mididresses%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+  "amount": 3499,
+  "category": "fall essentials",
+  "currency": "USD"
+},
+{
+  "id": 6,
+  "name": "Puff-sleeved Dress",
+  "description": "Short dress in airy woven fabric. Small stand-up collar, V-shaped opening, and covered buttons at top. Gathered seam at waist and long, voluminous puff sleeves with button at cuffs. Lining in jersey made from recycled polyester.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F1b%2F83%2F1b83dfe2d5bc5b979e8bf33aca4b3ca1a847a579.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_dresses_shortdresses%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+  "amount": 3499,
+  "category": "fall essentials",
+  "currency": "USD"
+},
+{
+  "id": 7,
+  "name": "Oversized Shirt Jacket",
+  "description": "Oversized shirt jacket in woven fabric with soft, brushed inside. Collar, buttons at front, and yoke at back. Chest pockets with flap and button, diagonal side pockets, gently dropped shoulders, and long sleeves with button at cuffs. Short slits at sides and slightly longer hem at back. Unlined.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F34%2F91%2F3491009a646c25ce2f68853f0b53ea104b652499.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_jacketscoats_shirtjackets%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+  "amount": 4999,
+  "category": "fall essentials",
+  "currency": "USD"
+},
+{
+  "id": 8,
+  "name": "Hoodie",
+  "description": "Wide-cut sweatshirt with a lined drawstring hood, kangaroo pocket, and ribbing at cuffs and hem.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F25%2F95%2F259550d149c13c58542093a1235e4dc59d4672fe.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_cardigansjumpers_hoodiessweatshirts%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main] ",
+  "amount": 1999,
+  "category": "fall essentials",
+  "currency": "USD"
+},
+{
+  "id": 9,
+  "name": "Leggings with Creases",
+  "description": "Leggings in stretch fabric. High waist and concealed, elasticized waistband. Stitched creases on legs and raw-edge hems.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F40%2Fad%2F40ad47db24fa3d1447277d92e1bc1b53a089c7f4.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_trousers_leggings%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+  "amount": 2499,
+  "category": "fall essentials",
+  "currency": "USD"
+},
+{
+  "id": 10,
+  "name": "Fluffy Sweater",
+  "description": "Soft, fluffy, knit sweater with a round neckline, dropped shoulders, and long sleeves. Ribbing at neckline, cuffs, and hem.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F6e%2F1b%2F6e1bd71d8f0ac99012d8ad73dba7da2794002df8.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+  "amount": 2499,
+  "category": "fall essentials",
+  "currency": "USD"
+},
+{
+  "id": 11,
+  "name": "Skinny Regular Ankle Jeans",
+  "description": "Jeans in washed stretch denim with a regular waist and zip fly with button. Mock front pockets, regular back pockets, and skinny legs.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F8e%2Ff3%2F8ef3f212ed1d3392ab3ba17aebd0c9a5975968ea.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_jeans_skinny%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+  "amount": 999,
+  "category": "fall essentials",
+  "currency": "USD"
+},
+{
+  "id": 12,
+  "name": "Tie Belt Coat",
+  "description": "Coat in felted fabric with a low stand-up collar. Concealed buttons at front, discreet side-seam pockets, and a removable tie belt at waist. Lining in recycled polyester.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F3c%2F7d%2F3c7d73a5a33bae0f3727c78a2ce92e94ca87c31d.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+  "amount": 4999 ,
+  "category": "fall essentials",
+  "currency": "USD"
+},
+{
+  "id": 13,
+  "name": "Tie Belt Coat",
+  "description": "Coat in woven fabric with a soft, brushed finish. Notched lapels, wrapover front with concealed snap fasteners, and removable tie belt at waist. Discreet side pockets and vent at back. Satin lining. Polyester content of lining is partly recycled.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F93%2F40%2F9340e4ba3f5d9be6d59e19c1b5fb92f0fac37800.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_jacketscoats_coats%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+  "amount": 5999, 
+  "category": "fall essentials",
+  "currency": "USD"
+},
+{
+  "id": 14,
+  "name": "Faux Fur-lined Jacket",
+  "description": "Straight-cut jacket with soft faux fur lining. Faux fur collar with adjustable tabs and metal buckles. Zipper at front, side pockets, and faux fur trim at cuffs and hem.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F89%2Fd8%2F89d8c76f5a27fdf220a01f343c2c9a4ffeee5609.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+  "amount": 6999,
+  "category": "fall essentials",
+  "currency": "USD"
+},
+{
+  "id": 15,
+  "name": "Slacks",
+  "description": "Ankle-length slacks in woven, stretch fabric. Regular waist, concealed elasticized waistband, and zip fly with concealed hook-and-eye fastener. Side pockets, mock welt back pockets, and tapered legs.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F2b%2Fdf%2F2bdf699ce2806bf6822b84dbb9f560f4825d20f0.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_trousers_chinosslacks%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+  "amount": 1999,
+  "category": "fall essentials",
+  "currency": "USD"
+},
+{
+  "id": 16,
+  "name": "Biker Jacket",
+  "description": "Biker jacket in faux leather with a diagonal zipper at front. Notched lapels with decorative snap fasteners, side pockets with zipper, and zipper at cuffs. Tab at sides with decorative snap fastener. Lining in recycled polyester.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fc0%2F11%2Fc0118fd84568cc74708148c79a290499986ba3b1.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+  "amount": 4999,
+  "category": "fall essentials",
+  "currency": "USD"
+},
+{
+  "id": 17,
+  "name": "Double-breasted Jacket",
+  "description": "Straight-cut, double-breasted jacket in woven fabric. Notched lapels, pearlescent buttons at front, and front pockets with flap. Gently tapered waist. Lined.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fcf%2Fda%2Fcfda6828522dc357db12d48c4d075414e99c2340.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_blazers%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+  "amount": 4999,
+  "category": "fall essentials",
+  "currency": "USD"
+},
+{
+  "id": 18,
+  "name": "Cotton Leggings",
+  "description": "Leggings in soft jersey made from an organic cotton blend. Wide, elasticized waistband.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F85%2Fc1%2F85c16e3a571687b260844839afaae0355fad929c.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_trousers_leggings%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+  "amount": 999,
+  "category": "fall essentials",
+  "currency": "USD"
+},
+{
+  "id": 19,
+  "name": "Jacquard-weave Dress",
+  "description": "Calf-length dress in jacquard-weave fabric. Round neckline and opening at back of neck with covered button. Short, wide raglan sleeves with narrow trim, seam at waist with drawstrings, and gathered tier on skirt for added volume. Jersey lining.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F4d%2Fe2%2F4de271b49b1782b9984d8b6c478608fb95466f4f.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+  "amount": 4999,
+  "category": "fall essentials",
+  "currency": "USD"
+},
+{
+  "id": 20,
+  "name": "Wide-cut Cotton T-shirt",
+  "description": "Wide-cut T-shirt in soft cotton jersey with a ribbed neckline.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F8c%2F82%2F8c8232cd764954ca32e9901c8b3f3e8ee7e825ad.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_tops_shortsleeve%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+  "amount": 999,
+  "category": "fall essentials",
+  "currency": "USD"
+},
+{
+  "id": 21,
+  "name": "Long Jacket",
+  "description": "Longer jacket in woven fabric with notched lapels and welt front pockets with flap. Lined.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F36%2F3a%2F363a94493725e0e667fbde7d7d4594c1b88b58ef.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_blazers%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+  "amount": 4999,
+  "category": "fall essentials",
+  "currency": "USD"
+},
+{
+  "id": 22,
+  "name": "Jersey Turtleneck Top",
+  "description": "Fitted turtleneck top in soft jersey with long sleeves.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F7a%2F3f%2F7a3fd84b25d6c5e00646ac6c1a293295a4022482.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_tops_longsleeve%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+  "amount": 999,
+  "category": "fall essentials",
+  "currency": "USD"
+},
+{
+  "id": 23,
+  "name": "Bouclé Skirt",
+  "description": "Short, gently fitted skirt in woven, textured bouclé. High waist with decorative metal buttons at front and concealed zipper at back. Diagonal side pockets. Lining in recycled polyester.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F32%2Fd5%2F32d5759344079d48c006140bcf124b5781b81e50.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+  "amount": 3999,
+  "category": "fall essentials",
+  "currency": "USD"
+},
+{
+  "id": 24,
+  "name": "MAMA Leggings",
+  "description": "Leggings in soft cotton and viscose jersey. Wide, foldover panel at waist for added comfort.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F15%2F41%2F1541e12a0946209aa64bc0d70bca7bfea235d9a8.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_maternity_bottoms%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+  "amount": 1499,
+  "category": "fall essentials",
+  "currency": "USD"
+},
+{
+  "id": 25,
+  "name": "Pleated Skirt",
+  "description": "Calf-length, pleated skirt in woven fabric with a high waist. Elasticized waistband. Unlined.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F02%2Fb4%2F02b425436b0dd9b9f55343d0901108ecb4210256.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_skirts_midiskirts%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+  "amount": 3999,
+  "category": "fall essentials",
+  "currency": "USD"
+},
+{
+  "id": 26,
+  "name": "Plaid Flannel Shirt",
+  "description": "Plaid, long-sleeved shirt in soft cotton flannel. Button-down collar, classic button placket, and yoke at back with pleat and locker loop. Open chest pocket, adjustable buttoning at cuffs, and sleeve placket with link button. Rounded hem, slightly longer at back.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F54%2F79%2F5479b746d2a762bee8bfc533eaf573fbb550d695.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_shirts_flannel%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+  "amount": 2499,
+  "category": "fall essentials",
+  "currency": "USD"
+},
+{
+  "id": 27,
+  "name": "Slim Fit Joggers",
+  "description": "Ankle-length joggers in woven fabric. Elasticized drawstring waistband, diagonal side pockets, and welt back pockets with button. Legs with creases and sewn cuffs. Slim Fit – close-fitting at thighs, knees, and ankles for a tailored silhouette.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F3f%2Ff2%2F3ff2d815b8ffac8a2184ce30deba7c0cde595b58.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_trousers_joggers%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+  "amount": 3499,
+  "category": "fall essentials",
+  "currency": "USD"
+},
+{
+  "id": 28,
+  "name": "Slim Fit Turtleneck Shirt",
+  "description": "Long-sleeved, turtleneck shirt in cotton jersey. Slim Fit – tapered at chest and waist with slightly narrower sleeves for a tailored silhouette.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fae%2F2e%2Fae2eb22081ca676eb7dc1b13a82670aee87071ad.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_tshirtstanks_longsleeve%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+  "amount": 1799,
+  "category": "fall essentials",
+  "currency": "USD"
+},
+{
+  "id": 29,
+  "name": "Jersey Shirt Jacket",
+  "description": "Shirt jacket in thick jersey. Cutaway collar, snap fasteners at front, and yoke at back. Chest pockets with flap and snap fasteners at cuffs.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fd8%2F37%2Fd837ecd18630d680b50c0d09e3fc3eb03ca08bcb.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_jacketscoats_jackets%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+  "amount": 3499,
+  "category": "fall essentials",
+  "currency": "USD"
+},
+{
+  "id": 30,
+  "name": "Regular Fit Shirt Jacket",
+  "description": "Shirt jacket in soft faux suede. Collar, buttons at front, and yoke at back. Chest pockets with flap and concealed button, and long sleeves with adjustable buttoning at cuffs. Regular Fit – classic fit with good room for movement and gently shaped waist for a comfortable, tailored silhouette.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F04%2F9e%2F049ecbe15a4386458c63e7be6e59863d04808d37.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_jacketscoats_jackets%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/main]",
+  "amount": 4999,
+  "category": "fall essentials",
+  "currency": "USD"
+},
+{
+  "id": 31,
+  "name": "Slim Fit Turtleneck Shirt",
+  "description": "Long-sleeved, turtleneck shirt in cotton jersey. Slim Fit – tapered at chest and waist with slightly narrower sleeves for a tailored silhouette.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fe9%2Fa6%2Fe9a6e83d676ef4a16fe4f4bcc26c18e07038bfb8.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_tshirtstanks_longsleeve%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+  "amount": 1799,
+  "category": "fall essentials",
+  "currency": "USD"
+},
+{
+  "id": 32,
+  "name": "Jersey Shirt Jacket",
+  "description": "Shirt jacket in thick jersey. Cutaway collar, snap fasteners at front, and yoke at back. Chest pockets with flap and snap fasteners at cuffs.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F07%2Fcc%2F07cce4b06acb2d376305ca8f33e68ee23f486986.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_jacketscoats_jackets%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+  "amount": 3499,
+  "category": "fall essentials",
+  "currency": "USD"
+},
+{
+  "id": 33,
+  "name": "Lined Corduroy Jacket",
+  "description": "Jacket in corduroy with a faux shearling-lined collar. Buttons at front, chest pockets with flap and button, and welt side pockets. Adjustable tab at sides and button at cuffs. Partly lined in faux shearling.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F75%2Ffa%2F75fa9d19ccdc41988b4f837c763f203a54278ca5.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_jacketscoats_jackets%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+  "amount": 5999 ,
+  "category": "fall essentials",
+  "currency": "USD"
+},
+{
+  "id": 34,
+  "name": "Relaxed Fit Hoodie",
+  "description": "Relaxed-fit sweatshirt hoodie. Lined drawstring hood, kangaroo pocket, long sleeves, and ribbing at cuffs and hem. Soft, brushed inside.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F8b%2F74%2F8b7444641ca5085b6fb16714278499a035207f80.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_hoodiessweatshirts_hoodies%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+  "amount": 2499,
+  "category": "fall essentials",
+  "currency": "USD"
+},
+{
+  "id": 35,
+  "name": "Long Hooded Cardigan",
+  "description": "Long cardigan in lightweight sweatshirt fabric with visible seams and a jersey-lined, drawstring hood. Long sleeves, side pockets, and asymmetric, raw-edge hem. No fasteners.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fea%2F36%2Fea3663a672b57587aa93dea534e5bf1411a2269b.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_cardigansjumpers_cardigans%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+  "amount": 3499,
+  "category": "fall essentials",
+  "currency": "USD"
+},
+{
+  "id": 36,
+  "name": "Hooded Denim Jacket",
+  "description": "Jacket in washed denim with a jersey-lined, drawstring hood and sleeves in sweatshirt fabric. Collar, buttons at front, chest pockets with flap and button, and side pockets. Ribbing at cuffs and adjustable tab at sides of hem. Unlined.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fc9%2Fa0%2Fc9a062f4487e944bac187ec22b38d5f5396370dc.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_jacketscoats_jackets%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+  "amount": 4999,
+  "category": "fall essentials",
+  "currency": "USD"
+},
+{
+  "id": 37,
+  "name": "Regular Fit Oxford Shirt",
+  "description": "Long-sleeved shirt in washed oxford-weave cotton fabric. Button-down collar, yoke at back with locker loop, and chest pocket. Regular Fit – classic fit with good room for movement and gently tapered waist for a comfortable, tailored silhouette.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F53%2Fa8%2F53a84aa1517bca0e3e20dcdcf6388b84ac7d8fc3.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_shirts_longsleeved%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+  "amount": 2499,
+  "category": "fall essentials",
+  "currency": "USD"
+},
+{
+  "id": 38,
+  "name": "Twill Shirt Jacket",
+  "description": "Shirt jacket in cotton twill. Collar, zipper at front, and yoke at back. Chest pockets with flap and concealed snap fastener, cuffs with slit and button, and straight-cut hem. Unlined.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fbd%2F0a%2Fbd0a9797d18e9b91d0460703a7308db09ca41087.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_jacketscoats_jackets%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+  "amount": 3499 ,
+  "category": "fall essentials",
+  "currency": "USD"
+},
+{
+  "id": 39,
+  "name": "Lined Denim Jacket",
+  "description": "Straight-cut jacket in thick cotton denim with a faux shearling collar. Buttons at front and button at cuffs. Chest pockets with flap and button, patch front pockets, and one inner pocket. Lightly padded. Quilted lining in woven cotton fabric.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fd3%2F55%2Fd355fa367ec6317b21bd88e57f4701375868e9a0.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_jacketscoats_denimjackets%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+  "amount": 5999,
+  "category": "fall essentials",
+  "currency": "USD"
+},
+{
+  "id": 40,
+  "name": "Wool-blend Turtleneck Sweater",
+  "description": "Fine-knit sweater in a soft merino wool blend. Ribbed turtleneck, long sleeves, and ribbing at cuffs and hem.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fc1%2Fc1%2Fc1c19ab8bee6b4eb6212f684075b90161caa9ca8.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_cardigansjumpers_turtleneck%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+  "amount": 3499,
+  "category": "fall essentials",
+  "currency": "USD"
+},
+{
+  "id": 41,
+  "name": "Merino Wool Turtleneck Sweater",
+  "description": "Fine-knit, turtleneck sweater in soft merino wool with ribbing at cuffs and hem.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fb0%2Fac%2Fb0ac831de93f8593117a7f3e9afc78e92d6875c4.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_cardigansjumpers_turtleneck%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+  "amount": 4999,
+  "category": "fall essentials",
+  "currency": "USD"
+},
+{
+  "id": 42,
+  "name": "Nylon Windbreaker",
+  "description": "Windbreaker in woven nylon fabric with a lined, drawstring hood. Zip at front, side pockets, and inner pocket. Elasticized cuffs. Lined.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Ff3%2F1e%2Ff31e008b468ad494437bee0e0b000b8da5c1e2d7.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_all%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+  "amount": 3499,
+  "category": "fall essentials",
+  "currency": "USD"
+},
+{
+  "id": 43,
+  "name": "Quilted Vest",
+  "description": "Lightly padded, diamond-quilted vest. Ribbed collar, zipper at front, side pockets, and an inner pocket with hook-loop fastener. Contrasting lining.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F09%2Fd1%2F09d1444dc1c9859a9b935f4ae085e8d3d959cbb4.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_jacketscoats_jackets%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+  "amount": 2499,
+  "category": "fall essentials",
+  "currency": "USD"
+},
+{
+  "id": 44,
+  "name": "Regular Fit Cropped Joggers",
+  "description": "Ankle-length joggers in woven fabric. Elastic at back of waistband, diagonal side pockets, and welt back pockets with button. Legs with creases. Polyester content is partly recycled. Regular Fit – a classic fit with good room for movement over thighs and knees for a comfortable, straight silhouette.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fd6%2F63%2Fd663d05c8dd37fd13220969d9c6eb69dc0ceaf4e.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_blazerssuits_trousers%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/main]",
+  "amount": 3499,
+  "category": "fall essentials",
+  "currency": "USD"
+},
+{
+  "id": 45,
+  "name": "Corduroy Collared Jacket",
+  "description": "Straight-cut, lightly padded jacket in cotton canvas with a corduroy collar. Buttons at front and button at cuffs. Chest pockets with flap and button, patch pockets, and one inner pocket. Quilted lining in recycled polyester.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F09%2F87%2F0987200f2c94e833e677e79b31f368d89773e6a2.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_jacketscoats_jackets%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+  "amount": 5999,
+  "category": "fall essentials",
+  "currency": "USD"
+},
+{
+  "id": 46,
+  "name": "Slim Fit Cropped Chinos",
+  "description": "Ankle-length chinos in washed, stretch cotton twill. Zip fly with button, diagonal side pockets, and welt back pockets. Slim Fit – relaxed over thighs and tapered from knees down for a relaxed, well-tailored look.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fcd%2Ffb%2Fcdfb34e2a65f251bda706b57c8b9ea5422c03a56.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_trousers_chinos_slim_all%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+  "amount": 1999,
+  "category": "fall essentials",
+  "currency": "USD"
+},
+{
+  "id": 47,
+  "name": "Muscle Fit Turtleneck Sweater",
+  "description": "Rib-knit turtleneck sweater in cotton with long raglan sleeves. Muscle Fit - designed to showcase the body’s physique. Narrow shoulders and tapered sleeves for a flattering silhouette.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F49%2F62%2F4962c198d723a0ddf09d4f3b6c926c3378c86e40.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_cardigansjumpers_turtleneck%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+  "amount": 3499,
+  "category": "fall essentials",
+  "currency": "USD"
+},
+{
+  "id": 48,
+  "name": "Premium Cotton T-shirt",
+  "description": "Crew-neck T-shirt in premium cotton jersey.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F6f%2F4c%2F6f4c868710c9ab4d0b2bd2b8b845d741c40d70e2.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_tshirtstanks_shortsleeve%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+  "amount": 1799,
+  "category": "fall essentials",
+  "currency": "USD"
+},
+{
+  "id": 49,
+  "name": "Cotton Cargo Joggers",
+  "description": "Joggers in cotton twill. Elasticized drawstring waistband, side pockets, and back and leg pockets with flap and concealed snap fasteners. Tapered legs with seams at knees and ribbed hems.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F08%2F0d%2F080db199c989539e4e8dab6916fde3c34387691b.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_trousers_cargo%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/main]",
+  "amount": 3499,
+  "category": "fall essentials",
+  "currency": "USD"
+},
+{
+  "id": 50,
+  "name": "Long Hooded Cardigan",
+  "description": "Long cardigan in lightweight sweatshirt fabric with visible seams and a jersey-lined, drawstring hood. Long sleeves, side pockets, and asymmetric, raw-edge hem. No fasteners.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fea%2F36%2Fea3663a672b57587aa93dea534e5bf1411a2269b.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_cardigansjumpers_cardigans%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+  "amount": 3499,
+  "category": "fall essentials",
+  "currency": "USD"
+},
+{
+  "id": 51,
+  "name": "Knit Mock-turtleneck Sweater",
+  "description": "Soft, boxy, knit sweater with wool content. Mock turtleneck and long, wide sleeves. Polyester content is recycled.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F6b%2F60%2F6b606bf40c05fbda12524f7babb7343ec85d1f44.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_cardigansjumpers_jumpers%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+  "amount": 3499,
+  "category": "the knit factor",
+  "currency": "USD"
+},
+{
+  "id": 52,
+  "name": "Chunky-knit Sweater",
+  "description": "Oversized sweater in soft, chunky-knit fabric. Heavily dropped shoulders, wide sleeves with snug cuffs, and ribbing at neckline, cuffs, and hem.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F70%2F0c%2F700ce543ccb9072e5661223f504fe68c30675d80.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+  "amount": 3499,
+  "category": "the knit factor",
+  "currency": "USD"
+},
+{
+  "id": 53,
+  "name": "Ribbed Turtleneck Sweater",
+  "description": "Relaxed-fit sweater in soft, rib-knit fabric with wool content. Double-layered turtleneck, heavily dropped shoulders, and long sleeves. Slits at sides. Polyester content is recycled.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F04%2F4d%2F044d3d656a07f9aa3029ace9b19881e31e0c2f06.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/main]",
+  "amount": 3999,
+  "category": "the knit factor",
+  "currency": "USD"
+},
+{
+  "id": 54,
+  "name": "Knit Sweater",
+  "description": "Short, wide-cut sweater in soft, knit fabric. Low-cut V-neck with vertical drawstring at front. Dropped shoulders and long, wide sleeves.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F2e%2F9a%2F2e9ac464adca3800ac0d82ce840823c86b6ac1ed.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+  "amount": 2499,
+  "category": "the knit factor",
+  "currency": "USD"
+},
+{
+  "id": 55,
+  "name": "Knit Turtleneck Sweater",
+  "description": "Soft, knit sweater with wool content. Ribbed turtleneck, dropped shoulders, long sleeves, and ribbing at cuffs and hem. Slightly longer at back. Polyester content is recycled.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F5a%2F5e%2F5a5e7f88d15351983d5e414b2122d18577623bec.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+  "amount": 1999,
+  "category": "the knit factor",
+  "currency": "USD"
+},
+{
+  "id": 56,
+  "name": "Cable-knit Sweater",
+  "description": "Relaxed-fit sweater in soft, cable-knit fabric with wool content. Long, wide raglan sleeves and ribbing at neckline, cuffs, and hem. Polyester content is recycled.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fad%2F02%2Fad021eed93779e5b24a9dfef881933ad2b81799c.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_cardigansjumpers_jumpers%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+  "amount": 3999,
+  "category": "the knit factor",
+  "currency": "USD"
+},
+{
+  "id": 57,
+  "name": "Ribbed Mock-turtleneck Sweater",
+  "description": "Fitted sweater in soft, rib-knit fabric with wool content. Mock turtleneck and long sleeves with short slit at cuffs.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fef%2F0f%2Fef0f181157810869c9131a979178f74e381cfe4b.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+  "amount": 2499,
+  "category": "the knit factor",
+  "currency": "USD"
+},
+{
+  "id": 58,
+  "name": "Turtleneck Sweater",
+  "description": "Soft, knit turtleneck sweater with wool content. Heavily dropped shoulders, long sleeves, and ribbing at cuffs and hem. Polyester content is recycled.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fdf%2F7b%2Fdf7b71505334f856e7c6e7d0b257fa6e99fe1184.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+  "amount": 3999,
+  "category": "the knit factor",
+  "currency": "USD"
+},
+{
+  "id": 59,
+  "name": "V-neck Sweater",
+  "description": "Soft, fluffy, knit sweater with a V-neck at front and back, long raglan sleeves, and ribbing at neckline, cuffs, and hem.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F53%2Faa%2F53aa4d294f3eca23fe80e747d9a39c192c46906c.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_knitwear_jumpers%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+  "amount": 2499,
+  "category": "the knit factor",
+  "currency": "USD"
+},
+{
+  "id": 60,
+  "name": "Long Cardigan",
+  "description": "Long, fine-knit cardigan in soft fabric with wool content. Dropped shoulders, long sleeves, and no buttons. Ribbing at cuffs, back of neck, and hem. Polyester content is recycled.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F78%2F41%2F7841bc6b02bb812e404689751ab066c6e4d50cc9.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_basics_cardigansjumpers%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+  "amount": 1999,
+  "category": "the knit factor",
+  "currency": "USD"
+},
+{
+  "id": 61,
+  "name": "Knit Cardigan",
+  "description": "Oversized cardigan in a soft, chunky-knit. Low-cut V-neck, buttons at front, heavily dropped shoulders, and wide sleeves. Ribbing at opening and cuffs.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F19%2F20%2F192037d78636c93c97bd0adb66b3342ceb30b5d2.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+  "amount": 2499,
+  "category": "the knit factor",
+  "currency": "USD"
+},
+{
+  "id": 62,
+  "name": "V-neck Wool-blend Sweater",
+  "description": "Relaxed-fit, rib-knit sweater in a soft wool blend. V-neck at front and back, dropped shoulders, and long sleeves. Ribbing at neckline, cuffs, and hem. Slits at sides and slightly longer hem at back.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F7c%2Fd2%2F7cd2d65b7c1d26a79e33b7e6efc7b47a93b1c107.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+  "amount": 2999,
+  "category": "the knit factor",
+  "currency": "USD"
+},
+{
+  "id": 63,
+  "name": "Car Coat",
+  "description": "Car coat in twill with a collar, concealed buttons at front, and long raglan sleeves with adjustable tab at cuffs. Diagonal welt front pockets, inner pockets, and vent at back. Lined in satin made from recycled polyester.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fcc%2Fde%2Fccde9b115c13fa60729c0b3dd00f0bea29cfb6a9.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_jacketscoats_coats%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+  "amount": 5999,
+  "category": "the complete coat",
+  "currency": "USD"
+},
+{
+  "id": 64,
+  "name": "Wool-blend Coat",
+  "description": "Coat in woven, felted wool-blend fabric. Stand-up collar, buttons at front, and decorative buttons at cuffs. Diagonal welt front pockets and two inner pockets. Vent at back. Lined.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F27%2F91%2F2791f204b7337c8de044f6057504dba9ebcaf68c.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_all%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+  "amount": 9900,
+  "category": "the complete coat",
+  "currency": "USD"
+},
+{
+  "id": 65,
+  "name": "Wool-blend Coat",
+  "description": "Single-breasted coat in recycled wool and recycled polyester. Notched lapels, decorative buttons at cuffs, and vent at back. Chest pocket, diagonal welt side pockets, and two inner pockets. Lining in recycled polyester.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F6c%2Ff2%2F6cf28e71664d4b03791ecfdf24a0ce08ca347129.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_jacketscoats_coats%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+  "amount": 12900,
+  "category": "the complete coat",
+  "currency": "USD"
+},
+{
+  "id": 67,
+  "name": "Cashmere-blend Coat",
+  "description": "Coat in a felted wool blend with cashmere content. Chimney collar with concealed snap fasteners and wind flap at front with concealed buttons. Welt side pockets, three inner pockets, and a vent at back. Lining in recycled polyester. Wool content is recycled.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fb7%2F65%2Fb765a7a425782326c1bc943041926d84e3503746.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+  "amount": 14900,
+  "category": "the complete coat",
+  "currency": "USD"
+},
+{
+  "id": 68,
+  "name": "Wool-blend Coat",
+  "description": "Coat in woven, felted wool-blend fabric. Stand-up collar, buttons at front, and decorative buttons at cuffs. Diagonal welt front pockets and two inner pockets. Vent at back. Lined.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fb7%2F7a%2Fb77a16d157283f4f6fb8338e6563e050ed617d93.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_jacketscoats_coats%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/main]",
+  "amount": 9900,
+  "category": "the complete coat",
+  "currency": "USD"
+},
+{
+  "id": 69,
+  "name": "Wool-blend Coat",
+  "description": "Coat in woven, felted wool-blend fabric. Stand-up collar, buttons at front, and decorative buttons at cuffs. Diagonal welt front pockets and two inner pockets. Vent at back. Lined.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fa1%2Fec%2Fa1ecc400bdeb7198faa7362d4767808ac79883c6.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_jacketscoats_coats%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+  "amount": 9900,
+  "category": "the complete coat",
+  "currency": "USD"
+},
+{
+  "id": 70,
+  "name": "Wool-blend Coat",
+  "description": "Coat in woven, felted wool-blend fabric. Stand-up collar, buttons at front, and decorative buttons at cuffs. Diagonal welt front pockets and two inner pockets. Vent at back. Lined.",
+  "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F44%2Faf%2F44afc1402882b5054d81875b6f6ea346d47f51a9.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_jacketscoats_coats%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+  "amount": 9900,
+  "category": "the complete coat",
+  "currency": "USD"
+}
 ]

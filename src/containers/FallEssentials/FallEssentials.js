@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Nav from "../../components/UI/Nav/Nav";
 import ProductsList from "../../components/Products/ProductsList";
+import FallEssentialsLogo from "../../components/TitleDesigns/FallEssentialsLogo/FallEssentialsLogo";
 import "./FallEssentials.scss";
 
 const FallEssentials = () => {
@@ -16,7 +17,9 @@ const FallEssentials = () => {
     await fetch("/.netlify/functions/get-products")
       .then((res) => res.json())
       .then((data) => {
-        const womensProducts = data.filter((o) => o.category === "womens");
+        const womensProducts = data.filter(
+          (o) => o.category === "fall essentials"
+    );
         setProductData(womensProducts);
       })
       .catch((err) => console.error(err));
@@ -30,11 +33,7 @@ const FallEssentials = () => {
   return (
     <div>
       <div id="fall-essenitals-header">
-        <h1>
-          <span className="fall">FALL</span>
-          <br />
-          ESSENTIALS
-        </h1>
+        <FallEssentialsLogo mode="main" />
       </div>
       <Nav />
       {items}

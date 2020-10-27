@@ -4,15 +4,15 @@ import { Link } from "react-router-dom";
 
 const ProductsList = (props) => {
   return (
-    <div className="items">
+    <div className="product-items">
       {props.products.map((product) => {
         return (
-          <div className="item" key={product.id}>
-            <div color={product.color} className="item-no">
-              <span className="no">no.</span>
+          <div className="product-item" key={product.id}>
+            <div color={product.color} className="product-item-no">
+              <span className="product-no">no.</span>
               {product.id}
             </div>
-            <div className="item-content">
+            <div className="product-item-content">
               <Link to={`/product/${product.id}`}>
                 <img src={product.image} alt={product.name} />
               </Link>

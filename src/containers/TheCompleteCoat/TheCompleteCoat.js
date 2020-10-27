@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Nav from "../../components/UI/Nav/Nav";
 import ProductsList from "../../components/Products/ProductsList";
+import CompleteCoatLogo from "../../components/TitleDesigns/CompleteCoatLogo/CompleteCoatLogo";
 import "./TheCompleteCoat.scss";
 
 const TheCompleteCoat = () => {
@@ -16,7 +17,9 @@ const TheCompleteCoat = () => {
     await fetch("/.netlify/functions/get-products")
       .then((res) => res.json())
       .then((data) => {
-        const womensProducts = data.filter((o) => o.category === "womens");
+        const womensProducts = data.filter(
+          (o) => o.category === "the complete coat"
+        );
         setProductData(womensProducts);
       })
       .catch((err) => console.error(err));
@@ -32,26 +35,16 @@ const TheCompleteCoat = () => {
       <div id="the-complete-coat">
         <div className="content">
           <div className="coat-container">
-            <div class="wrapper">
-              <h3>The Complete</h3>
-              <div class="content2">
-                <h1>
-                  CO
-                  <br />
-                  AT
-                </h1>
-              </div>
-            </div>
+            <CompleteCoatLogo mode="main" />
           </div>
           <div className="content">
             <div>
               <p>
-                Layer up in a way that reflects your style with our cozy
-                hoodies, sweaters and cardigans for women. Discover the latest
-                prints and colors, mixed with timeless knits and neutral
-                wardrobe basics that will last season after season. Whether you
-                prefer off-the-shoulder, oversized or fitted styles, we’ve got
-                you covered this fall.
+                Stay warm in style with our range of coats and jackets. No
+                matter the season or the forecast, our timeless peacoats, trench
+                coats and overcoats have you covered. Looking for a lighter
+                layer? Browse our selection of jackets for versatile denim
+                looks, on-trend bomber jackets and sleek leather styles.
               </p>
             </div>
           </div>

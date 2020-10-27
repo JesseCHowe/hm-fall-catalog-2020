@@ -1,0 +1,26 @@
+.cart-body {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 1rem);
+  justify-content: space-between;
+}
+
+.cart-items {
+  flex: 1;
+  overflow: scroll;
+}
+
+.no-cart-items {
+  align-items: center;
+  box-sizing: border-box;
+  color: #313131;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  padding: 1rem;
+  text-align: center;
+  p {
+    margin: 0 auto;
+    max-width: 200px;
+  }
+}

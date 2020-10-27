@@ -1,0 +1,32 @@
+.open {
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-name: slideIn;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-name: slideIn;
+}
+
+.inactive {
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-name: slideOut;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-name: slideOut;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes slideOut {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

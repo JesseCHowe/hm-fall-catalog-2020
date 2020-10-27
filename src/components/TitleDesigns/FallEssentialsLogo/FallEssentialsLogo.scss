@@ -1,0 +1,22 @@
+.fe-main {
+  color: var(--primary-highlight);
+  font-size: 15vw;
+  .fall {
+    color: var(--primary-light);
+    font-size: 15vw;
+  }
+}
+
+.fe-runway {
+  color: var(--primary-highlight);
+  display: block;
+  font-size: 2.4rem;
+  margin: 1rem 0;
+  .fall {
+    color: var(--primary-light);
+  }
+}
+
+.fe-nav {
+  color: var(--primary-dark);
+}

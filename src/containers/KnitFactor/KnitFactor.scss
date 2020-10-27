@@ -1,99 +1,47 @@
 #the-knit-factor {
-  max-width: 1200px;
-  margin: 0 auto;
+  align-items: center;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: center;
-
   height: calc(100vh - 70px);
+  margin: 0 auto;
+  max-width: 1200px;
   .runway {
     background-image: url("../../assets/images/needles.png");
-    height: 100%;
-    width: 100%;
+    background-position-y: bottom;
     background-repeat: no-repeat;
     background-size: contain;
-    background-position-y: bottom;
-  }
-  h1 {
-    margin: 1rem 0;
-    font-size: 3rem;
-    span {
-      display: block;
-      font-size: 3rem;
-    }
-  }
-  .factor {
-    text-align: right;
+    height: 100%;
+    width: 100%;
   }
   p {
     color: #fff;
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 2.5rem;
   }
   .content {
     padding: 1rem;
     max-width: 600px;
   }
-  .knit {
-    font-size: 13rem;
-    line-height: 9rem;
-    margin: 0;
-    background-color: #333;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='2' height='2' viewBox='0 0 4 4'%3E%3Cpath fill='%23ffffff' fill-opacity='1' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
-    background-repeat: repeat;
-    background-clip: text;
-    background-position: center;
-    -webkit-text-fill-color: transparent;
-    font-weight: bold;
-    text-transform: uppercase;
-    -webkit-font-smoothing: antialiased;
-  }
 }
-
 @media (max-width: 900px) {
   #the-knit-factor {
-    display: block;
+    align-items: center;
     display: flex;
     justify-content: center;
-    align-items: center;
     .content {
       padding: 1rem;
-    }
-    h1 {
-      max-width: fit-content;
-      margin: 0 auto;
-      span {
-        font-size: calc(100vw / 12);
-      }
-    }
-
-    .knit {
-      font-size: calc(100vw / 4);
     }
     .runway {
       display: none;
     }
   }
 }
-
 @media (max-width: 700px) {
   #the-knit-factor {
     height: 100vh;
-    h1 {
-      margin: 1rem auto;
-    }
     p {
-      max-width: 400px;
       margin: 0 auto;
-    }
-  }
-}
-
-@media (max-width: 400px) {
-  #the-knit-factor {
-    .knit {
-      font-size: 7rem;
-      line-height: 6rem;
+      max-width: 400px;
     }
   }
 }

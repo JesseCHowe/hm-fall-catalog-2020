@@ -1,68 +1,67 @@
 import React, { useState } from "react";
-import Nav from "../../components/UI/Nav/Nav";
-import { useSelector } from "react-redux";
-import CheckoutForm from "../../components/Cart/CheckoutForm/CheckoutForm";
-import CheckoutItem from "../../components/Cart/CheckoutItem/CheckoutItem";
-import { loadStripe } from "@stripe/stripe-js";
-import { Elements } from "@stripe/react-stripe-js";
+import { useSelector, useDispatch } from "react-redux";
+import { toggleCart, closeCart } from "../../store/actions/cartToggle";
 import "./Cart.scss";
-
-const stripePromise = loadStripe(
-  "pk_test_51Ha3qVJu3WrQMfz6s3xzr3fvlJQzAylEM4Rl9KLC97EeVyKy0KardSI7dN6tsoNT1Xgb5GBeyhbwuEHOb9u4o3SK00qLBh0WVJ"
-);
+import styled from "styled-components";
+import CompletePhase from "../../components/Cart/CompletePhase/CompletePhase";
+import FocusTrap from "focus-trap-react";
+import CartPhase from "../../components/Cart/CartPhase/CartPhase";
+import CheckoutPhase from "../../components/Cart/CheckoutPhase/CheckoutPhase";
 
 const Cart = () => {
-  const products = useSelector((state) => state.cart);
-  const total = products.reduce(
-    (prev, curr) => prev + curr.qty * curr.price,
-    0
-  );
-  const [orderPhase, setOrderPhase] = useState(true);
+  const dispatch = useDispatch();
+  const open = useSelector((state) => state.cartToggle.mode);
+  const [orderPhase, setOrderPhase] = useState("cart");
 
-  const proceedButton = (
-    <div className="proceed-btn-container">
-      <div>
-        <button className="proceed-btn" onClick={() => setOrderPhase(false)}>
-          CHECKOUT ${(total / 100).toFixed(2)}
-        </button>
-      </div>
-    </div>
-  );
-
-  const myCheckout = (
-    <React.Fragment>
-      <div className="new-order-form">
-        <div className="overlay" onClick={() => setOrderPhase(true)} />
-        <Elements stripe={stripePromise}>
-          <CheckoutForm className="order" clicked={() => setOrderPhase(true)} />
-        </Elements>
-      </div>
-    </React.Fragment>
-  );
+  React.useEffect(() => {
+    function keyListener(e) {
+      if (e.keyCode === 27) dispatch(closeCart());
+    }
+    document.addEventListener("keydown", keyListener);
+    return () => document.removeEventListener("keydown", keyListener);
+  });
 
   let phase;
-  orderPhase ? (phase = proceedButton) : (phase = myCheckout);
+  if (orderPhase === "cart")
+    phase = <CartPhase checkOutPhase={() => setOrderPhase("checkout")} />;
+  if (orderPhase === "checkout")
+    phase = (
+      <CheckoutPhase
+        cartPhase={() => setOrderPhase("cart")}
+        completePhase={() => setOrderPhase("complete")}
+      />
+    );
+  if (orderPhase === "complete")
+    phase = (
+      <CompletePhase
+        toCart={() => {
+          setOrderPhase("cart");
+          dispatch(toggleCart());
+        }}
+      />
+    );
+
+  let body;
+  open
+    ? (body = (
+        <FocusTrap>
+          <CartModal open={open} id="cart">
+            {phase}
+          </CartModal>
+        </FocusTrap>
+      ))
+    : (body = null);
 
   return (
-    <React.Fragment>
-      <Nav />
-      <div id="cart">
-        <div className="cart-container">
-          <div className="cart-items">
-            {products.map((product) => {
-              return (
-                <CheckoutItem
-                  product={product}
-                  key={product.name.split(" ").join("-")}
-                />
-              );
-            })}
-          </div>
-        </div>
-        {phase}
-      </div>
-    </React.Fragment>
+    <CartModal open={open} id="dummy-cart">
+      {body}
+    </CartModal>
   );
 };
+
+const CartModal = styled.div`
+  transition: 0.5s;
+  transform: ${(props) => (props.open ? "translateX(0%)" : "translateX(100%)")};
+`;
 
 export default Cart;

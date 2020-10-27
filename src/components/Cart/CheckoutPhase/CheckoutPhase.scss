@@ -1,0 +1,26 @@
+.checkout-calculation {
+  color: #000;
+  margin: 1rem 0;
+  width: fit-content;
+  > * {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    > * {
+      padding: 0.25rem;
+    }
+  }
+  span {
+    text-align: right;
+  }
+}
+
+.checkout-calc-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.notice {
+  color: red;
+  display: block;
+  text-align: center;
+}

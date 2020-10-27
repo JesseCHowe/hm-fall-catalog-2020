@@ -1,51 +1,21 @@
 import React, { useState, useEffect } from "react";
 import { CardElement, useStripe, useElements } from "@stripe/react-stripe-js";
 import { useSelector } from "react-redux";
+import Loader from "../../../UI/Loader/Loader";
+import Field from "../../../UI/Field/Field";
 import "./CheckoutForm.scss";
 
-const Field = ({
-  label,
-  id,
-  type,
-  placeholder,
-  required,
-  autoComplete,
-  value,
-  onChange,
-}) => (
-  <div className="FormRow">
-    <label htmlFor={id} className="FormRowLabel">
-      {label}
-    </label>
-    <input
-      className="FormRowInput"
-      id={id}
-      type={type}
-      placeholder={placeholder}
-      required={required}
-      autoComplete={autoComplete}
-      value={value}
-      onChange={onChange}
-    />
-  </div>
-);
-
 export default function CheckoutForm(props) {
-  const products = useSelector((state) => state.cart);
-  const total = products.reduce(
-    (prev, curr) => prev + curr.qty * curr.price,
-    0
-  );
-  const [succeeded, setSucceeded] = useState(false);
-  const [error, setError] = useState(null);
-  const [processing, setProcessing] = useState("");
-  const [disabled, setDisabled] = useState(true);
-  const [clientSecret, setClientSecret] = useState("");
-  const stripe = useStripe();
-  const elements = useElements();
+  const products = useSelector((state) => state.cart),
+    [succeeded, setSucceeded] = useState(false),
+    [error, setError] = useState(null),
+    [processing, setProcessing] = useState(""),
+    [disabled, setDisabled] = useState(true),
+    [clientSecret, setClientSecret] = useState(""),
+    stripe = useStripe(),
+    elements = useElements(),
+    total = products.reduce((prev, cur) => prev + cur.qty * cur.price, 0);
 
-  // const [cardComplete, setCardComplete] = useState(false);
-  // const [paymentMethod, setPaymentMethod] = useState(null);
   const [billingDetails, setBillingDetails] = useState({
     email: "",
     phone: "",
@@ -61,9 +31,13 @@ export default function CheckoutForm(props) {
         },
         body: JSON.stringify(products),
       })
-      .then((res) => res.json())
-      .then((data) => setClientSecret(data.clientSecret));
-  }, []);
+      .then((res) => {
+        return res.json();
+      })
+      .then((data) => {
+        setClientSecret(data.clientSecret);
+      });
+  });
 
   const cardStyle = {
     style: {
@@ -84,14 +58,10 @@ export default function CheckoutForm(props) {
   };
 
   const handleChange = async (event) => {
-    // Listen for changes in the CardElement
-    // and display any errors as the customer types their card details
     setDisabled(event.empty);
     setError(event.error ? event.error.message : "");
   };
-
   const handleSubmit = async (ev) => {
-    console.log("handling submission...");
     ev.preventDefault();
     setProcessing(true);
     const payload = await stripe.confirmCardPayment(clientSecret, {
@@ -106,17 +76,12 @@ export default function CheckoutForm(props) {
       setError(null);
       setProcessing(false);
       setSucceeded(true);
+      props.clicked();
     }
   };
-
+  
   return (
     <form id="payment-form" onSubmit={handleSubmit}>
-      <div className="exit-btn-container">
-        <h2>Checkout</h2>
-        <button className="exit-btn" onClick={props.clicked}>
-          X
-        </button>
-      </div>
       <fieldset className="FormGroup">
         <Field
           label="Name"
@@ -161,26 +126,22 @@ export default function CheckoutForm(props) {
         options={cardStyle}
         onChange={handleChange}
       />
-      <button
-        className="purchase-btn"
-        disabled={processing || disabled || succeeded}
-        id="submit"
-      >
-        <span id="button-text">
-          {processing ? (
-            <div className="spinner" id="spinner"></div>
-          ) : (
-            `Pay $${total / 100}`
-          )}
-        </span>
-      </button>
-      {/* Show any error that happens when processing the payment */}
+      {processing ? (
+        <Loader />
+      ) : (
+        <button
+          className="cart-button"
+          disabled={processing || disabled || succeeded}
+          id="submit"
+        >
+          <span>Pay ${total / 100}</span>
+        </button>
+      )}
       {error && (
         <div className="card-error" role="alert">
           {error}
         </div>
       )}
-      {/* Show a success message upon completion */}
     </form>
   );
 }

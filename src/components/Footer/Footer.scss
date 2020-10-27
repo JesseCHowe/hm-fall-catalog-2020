@@ -1,0 +1,43 @@
+footer {
+  background-color: var(--primary-dark);
+  box-sizing: border-box;
+  height: fit-content;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 1rem;
+  width: 100%;
+  > * {
+    border-top: 1px dashed var(--primary-neutral);
+    width: 100%;
+  }
+  a {
+    color: var(--primary-light);
+  }
+  img {
+    max-width: 70px;
+    width: 100%;
+  }
+  .hm-logo {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    span {
+      margin: 1rem;
+    }
+  }
+  .shop-links {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1rem auto;
+    max-width: 600px;
+  }
+  .social-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1rem auto;
+    max-width: 300px;
+  }
+}
