@@ -19,7 +19,7 @@ const FallEssentials = () => {
       .then((data) => {
         const womensProducts = data.filter(
           (o) => o.category === "fall essentials"
-    );
+        );
         setProductData(womensProducts);
       })
       .catch((err) => console.error(err));

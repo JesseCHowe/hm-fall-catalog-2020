@@ -15,9 +15,15 @@ const Runway = () => {
     await fetch("/.netlify/functions/get-products")
       .then((res) => res.json())
       .then((data) => {
-        const fallEssentials = data.filter((o) => o.category === "fall essentials").slice(0,7);
-        const theKnitFactor = data.filter((o) => o.category === "the knit factor").slice(0,7);
-        const theCompleteCoat = data.filter((o) => o.category === "the complete coat").slice(0,7);
+        const fallEssentials = data
+          .filter((o) => o.category === "fall essentials")
+          .slice(0, 7);
+        const theKnitFactor = data
+          .filter((o) => o.category === "the knit factor")
+          .slice(0, 7);
+        const theCompleteCoat = data
+          .filter((o) => o.category === "the complete coat")
+          .slice(0, 7);
         setProductData({
           fallEssentials: fallEssentials,
           theKnitFactor: theKnitFactor,

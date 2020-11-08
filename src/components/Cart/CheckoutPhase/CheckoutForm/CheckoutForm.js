@@ -24,7 +24,7 @@ export default function CheckoutForm(props) {
 
   useEffect(() => {
     window
-      .fetch(".netlify/functions/create-checkout", {
+      .fetch("/.netlify/functions/create-checkout", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -79,7 +79,7 @@ export default function CheckoutForm(props) {
       props.clicked();
     }
   };
-  
+
   return (
     <form id="payment-form" onSubmit={handleSubmit}>
       <fieldset className="FormGroup">
