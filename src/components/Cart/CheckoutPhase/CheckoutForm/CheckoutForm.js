@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from "react";
 import { CardElement, useStripe, useElements } from "@stripe/react-stripe-js";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import Loader from "../../../UI/Loader/Loader";
 import Field from "../../../UI/Field/Field";
 import "./CheckoutForm.scss";
+import { completePurchase } from "../../../../store/actions/cart";
 
-export default function CheckoutForm(props) {
-  const products = useSelector((state) => state.cart),
+export default function CheckoutForm() {
+  const dispatch = useDispatch();
+
+  const products = useSelector((state) => state.cart.products),
     [succeeded, setSucceeded] = useState(false),
     [error, setError] = useState(null),
     [processing, setProcessing] = useState(""),
@@ -14,7 +17,7 @@ export default function CheckoutForm(props) {
     [clientSecret, setClientSecret] = useState(""),
     stripe = useStripe(),
     elements = useElements(),
-    total = products.reduce((prev, cur) => prev + cur.qty * cur.price, 0);
+    total = products.reduce((prev, cur) => prev + cur.qty * cur.amount, 0);
 
   const [billingDetails, setBillingDetails] = useState({
     email: "",
@@ -37,7 +40,7 @@ export default function CheckoutForm(props) {
       .then((data) => {
         setClientSecret(data.clientSecret);
       });
-  });
+  }, [products]);
 
   const cardStyle = {
     style: {
@@ -61,6 +64,7 @@ export default function CheckoutForm(props) {
     setDisabled(event.empty);
     setError(event.error ? event.error.message : "");
   };
+
   const handleSubmit = async (ev) => {
     ev.preventDefault();
     setProcessing(true);
@@ -76,72 +80,74 @@ export default function CheckoutForm(props) {
       setError(null);
       setProcessing(false);
       setSucceeded(true);
-      props.clicked();
+      dispatch(completePurchase());
     }
   };
 
   return (
-    <form id="payment-form" onSubmit={handleSubmit}>
-      <fieldset className="FormGroup">
-        <Field
-          label="Name"
-          id="name"
-          type="text"
-          placeholder="Jane Doe"
-          required
-          autoComplete="name"
-          value={billingDetails.name}
-          onChange={(e) => {
-            setBillingDetails({ ...billingDetails, name: e.target.value });
-          }}
-        />
-        <Field
-          label="Email"
-          id="email"
-          type="email"
-          placeholder="janedoe@gmail.com"
-          required
-          autoComplete="email"
-          value={billingDetails.email}
-          onChange={(e) => {
-            setBillingDetails({ ...billingDetails, email: e.target.value });
-          }}
-        />
-        <Field
-          label="Phone"
-          id="phone"
-          type="tel"
-          placeholder="(941) 555-0123"
-          required
-          autoComplete="tel"
-          value={billingDetails.phone}
-          onChange={(e) => {
-            setBillingDetails({ ...billingDetails, phone: e.target.value });
-          }}
-        />
-      </fieldset>
+    <React.Fragment>
+      <form id="payment-form" onSubmit={handleSubmit}>
+        <fieldset className="FormGroup">
+          <Field
+            label="Name"
+            id="name"
+            type="text"
+            placeholder="Jane Doe"
+            required
+            autoComplete="name"
+            value={billingDetails.name}
+            onChange={(e) => {
+              setBillingDetails({ ...billingDetails, name: e.target.value });
+            }}
+          />
+          <Field
+            label="Email"
+            id="email"
+            type="email"
+            placeholder="janedoe@gmail.com"
+            required
+            autoComplete="email"
+            value={billingDetails.email}
+            onChange={(e) => {
+              setBillingDetails({ ...billingDetails, email: e.target.value });
+            }}
+          />
+          <Field
+            label="Phone"
+            id="phone"
+            type="tel"
+            placeholder="(941) 555-0123"
+            required
+            autoComplete="tel"
+            value={billingDetails.phone}
+            onChange={(e) => {
+              setBillingDetails({ ...billingDetails, phone: e.target.value });
+            }}
+          />
+        </fieldset>
 
-      <CardElement
-        id="card-element"
-        options={cardStyle}
-        onChange={handleChange}
-      />
-      {processing ? (
-        <Loader />
-      ) : (
-        <button
-          className="cart-button"
-          disabled={processing || disabled || succeeded}
-          id="submit"
-        >
-          <span>Pay ${total / 100}</span>
-        </button>
-      )}
-      {error && (
-        <div className="card-error" role="alert">
-          {error}
-        </div>
-      )}
-    </form>
+        <CardElement
+          id="card-element"
+          options={cardStyle}
+          onChange={handleChange}
+        />
+        {processing ? (
+          <Loader />
+        ) : (
+          <button
+            className="cart-button"
+            disabled={processing || disabled || succeeded}
+            id="submit"
+          >
+            <span>Pay ${(total / 100 + 5.67).toFixed(2)}</span>
+          </button>
+        )}
+        {error && (
+          <div className="card-error" role="alert">
+            {error}
+          </div>
+        )}
+      </form>
+    </React.Fragment>
   );
 }

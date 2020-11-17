@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { toggleCart, closeCart } from "../../store/actions/cartToggle";
+import { closeCart } from "../../store/actions/cart";
 import "./Cart.scss";
 import styled from "styled-components";
 import CompletePhase from "../../components/Cart/CompletePhase/CompletePhase";
@@ -8,12 +8,13 @@ import FocusTrap from "focus-trap-react";
 import CartPhase from "../../components/Cart/CartPhase/CartPhase";
 import CheckoutPhase from "../../components/Cart/CheckoutPhase/CheckoutPhase";
 
+
 const Cart = () => {
   const dispatch = useDispatch();
-  const open = useSelector((state) => state.cartToggle.mode);
-  const [orderPhase, setOrderPhase] = useState("cart");
+  const open = useSelector((state) => state.cart.open);
+  const orderPhase = useSelector((state) => state.cart.phase);
 
-  React.useEffect(() => {
+  useEffect(() => {
     function keyListener(e) {
       if (e.keyCode === 27) dispatch(closeCart());
     }
@@ -22,24 +23,9 @@ const Cart = () => {
   });
 
   let phase;
-  if (orderPhase === "cart")
-    phase = <CartPhase checkOutPhase={() => setOrderPhase("checkout")} />;
-  if (orderPhase === "checkout")
-    phase = (
-      <CheckoutPhase
-        cartPhase={() => setOrderPhase("cart")}
-        completePhase={() => setOrderPhase("complete")}
-      />
-    );
-  if (orderPhase === "complete")
-    phase = (
-      <CompletePhase
-        toCart={() => {
-          setOrderPhase("cart");
-          dispatch(toggleCart());
-        }}
-      />
-    );
+  if (orderPhase === "cart") phase = <CartPhase />;
+  if (orderPhase === "checkout") phase = <CheckoutPhase />;
+  if (orderPhase === "complete") phase = <CompletePhase />;
 
   let body;
   open

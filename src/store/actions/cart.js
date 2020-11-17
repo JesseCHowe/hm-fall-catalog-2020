@@ -33,3 +33,34 @@ export const emptyCart = () => {
     type: actionTypes.EMPTY_CART,
   };
 };
+
+export const toggleCart = () => {
+  return {
+    type: actionTypes.TOGGLE_CART,
+  };
+};
+
+export const closeCart = () => {
+  return {
+    type: actionTypes.CLOSE_CART,
+  };
+};
+
+export const setPhase = (phase) => {
+  return {
+    type: actionTypes.SET_PHASE,
+    phase,
+  };
+};
+
+export const completePurchase = () => {
+  return {
+    type: actionTypes.COMPLETE_PURCHASE,
+  };
+};
+
+export const exitCart = () => {
+  return {
+    type: actionTypes.EXIT_CART,
+  };
+};

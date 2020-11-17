@@ -2,14 +2,14 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "./NavDesktop.scss";
 import { useSelector, useDispatch } from "react-redux";
-import { toggleCart } from "../../../../store/actions/cartToggle";
+import { toggleCart } from "../../../../store/actions/cart";
 import FallEssentialsLogo from "../../../TitleDesigns/FallEssentialsLogo/FallEssentialsLogo";
 import TheKnitFactorLogo from "../../../TitleDesigns/TheKnitFactorLogo/TheKnitFactorLogo";
 import CompleteCoatLogo from "../../../TitleDesigns/CompleteCoatLogo/CompleteCoatLogo";
 
 const NavDesktop = () => {
   const dispatch = useDispatch();
-  const products = useSelector((state) => state.cart);
+  const products = useSelector((state) => state.cart.products);
   const total = products.reduce((prev, cur) => prev + cur.qty, 0);
 
   return (

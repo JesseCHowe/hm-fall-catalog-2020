@@ -3,8 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
 import CheckoutForm from "./CheckoutForm/CheckoutForm";
-import { emptyCart } from "../../../store/actions/cart";
-import { toggleCart } from "../../../store/actions/cartToggle";
+import { emptyCart, toggleCart, setPhase } from "../../../store/actions/cart";
 import FocusTrap from "focus-trap-react";
 import "./CheckoutPhase.scss";
 
@@ -12,9 +11,9 @@ const stripePromise = loadStripe(
   "pk_test_51Ha3qVJu3WrQMfz6s3xzr3fvlJQzAylEM4Rl9KLC97EeVyKy0KardSI7dN6tsoNT1Xgb5GBeyhbwuEHOb9u4o3SK00qLBh0WVJ"
 );
 
-const CheckoutPhase = (props) => {
+const CheckoutPhase = () => {
   const dispatch = useDispatch();
-  const products = useSelector((state) => state.cart);
+  const products = useSelector((state) => state.cart.products);
   const total = products.reduce((prev, cur) => prev + cur.qty * cur.amount, 0);
 
   return (
@@ -25,7 +24,10 @@ const CheckoutPhase = (props) => {
           onClick={() => dispatch(toggleCart())}
         ></div>
         <div className="cart-title">
-          <button className="return-btn" onClick={() => props.cartPhase()}>
+          <button
+            className="return-btn"
+            onClick={() => dispatch(setPhase("cart"))}
+          >
             &#8592;
           </button>
           <h2>Checkout</h2>
@@ -50,18 +52,7 @@ const CheckoutPhase = (props) => {
           </div>
         </div>
         <Elements stripe={stripePromise}>
-          <CheckoutForm
-            className="order"
-            toCart={() => props.cartPhase()}
-            toComplete={() => {
-              dispatch(emptyCart());
-              props.completePhase();
-            }}
-            clicked={() => {
-              dispatch(emptyCart());
-              props.completePhase();
-            }}
-          />
+          <CheckoutForm className="order" />
         </Elements>
         <span className="notice">
           For this demo project use the test card: 4242-4242-4242-4242

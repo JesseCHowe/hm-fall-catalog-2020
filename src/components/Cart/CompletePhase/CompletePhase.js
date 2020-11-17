@@ -1,7 +1,12 @@
 import React from "react";
+import { useDispatch } from "react-redux";
+import { exitCart } from "../../../store/actions/cart";
+
 import "./CompletePhase.scss";
 
-const CompletePhase = (props) => {
+const CompletePhase = () => {
+  const dispatch = useDispatch();
+
   const months = [
     "January",
     "February",
@@ -24,11 +29,11 @@ const CompletePhase = (props) => {
   let test = `${months[themonth]} ${thetoday}, ${theyear}`;
   return (
     <div>
-      <div className="cart-overlay" onClick={() => props.toCart()}></div>
+      <div className="cart-overlay" onClick={() => dispatch(exitCart())}></div>
       <div className="completed-checkout">
         <button
           className="exit-btn-complete exit-btn"
-          onClick={() => props.toCart()}
+          onClick={() => dispatch(exitCart())}
         >
           X
         </button>
@@ -47,7 +52,7 @@ const CompletePhase = (props) => {
             <br />
             <span>{test}</span>
           </p>
-          <button className="cart-button " onClick={() => props.toCart()}>
+          <button className="cart-button " onClick={() => dispatch(exitCart())}>
             Continue Shopping
           </button>
         </div>

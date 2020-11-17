@@ -1,6 +1,5 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-
 import Home from "./containers/Home/Home";
 import Cart from "./containers/Cart/Cart";
 import FallEssentials from "./containers/FallEssentials/FallEssentials";
