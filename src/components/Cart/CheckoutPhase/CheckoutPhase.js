@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
 import CheckoutForm from "./CheckoutForm/CheckoutForm";
-import { emptyCart, toggleCart, setPhase } from "../../../store/actions/cart";
+import { toggleCart, setPhase } from "../../../store/actions/cart";
 import FocusTrap from "focus-trap-react";
 import "./CheckoutPhase.scss";
 
