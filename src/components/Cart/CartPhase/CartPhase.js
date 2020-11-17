@@ -27,8 +27,26 @@ const CartPhase = () => {
     </div>
   );
 
+  const proceedBtn = (
+    <div className="cart-button-container">
+      <button
+        className="cart-button"
+        onClick={() => dispatch(setPhase("checkout"))}
+        disabled={!(products.length > 0)}
+      >
+        Checkout ${(total / 100).toFixed(2)}
+      </button>
+    </div>
+  );
+
   let cartBody;
-  products.length ? (cartBody = cartItems) : (cartBody = emptyItems);
+  let btnContainer;
+  if (products.length) {
+    cartBody = cartItems;
+    btnContainer = proceedBtn;
+  } else {
+    cartBody = emptyItems;
+  }
 
   return (
     <FocusTrap>
@@ -45,15 +63,7 @@ const CartPhase = () => {
             </button>
           </div>
           {cartBody}
-          <div className="cart-button-container">
-            <button
-              className="cart-button"
-              onClick={() => dispatch(setPhase("checkout"))}
-              disabled={!(products.length > 0)}
-            >
-              Checkout ${(total / 100).toFixed(2)}
-            </button>
-          </div>
+          {btnContainer}
         </div>
       </div>
     </FocusTrap>

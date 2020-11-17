@@ -9,7 +9,6 @@ import ProductInfo from "./containers/ProductInfo/ProductInfo";
 import Footer from "./components/Footer/Footer";
 
 const App = () => {
-  console.log(process.env.STRIPE_SECRET_KEY);
   return (
     <React.Fragment>
       <Cart />

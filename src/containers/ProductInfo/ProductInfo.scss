@@ -21,13 +21,11 @@
     border: 1px solid var(--primary-light);
     box-sizing: border-box;
     flex: 2;
-    height: 25vw;
-    max-height: 440px;
+    height: auto;
     max-width: 440px;
     padding: 1rem;
     position: relative;
     transform: translateX(1.9rem);
-    width: 25vw;
     z-index: 100;
   }
   .add-to-cart {
@@ -49,7 +47,7 @@
     justify-content: space-between;
     left: 0;
     padding: 1rem;
-    position: absolute;
+    position: relative;
     top: 0;
   }
   h1 {
@@ -97,7 +95,7 @@
 @media (max-width: 650px) {
   #test-page {
     display: block;
-    margin-top: auto;
+    margin-top: 90px;
     .test-item {
       display: flex;
       flex-direction: column-reverse;

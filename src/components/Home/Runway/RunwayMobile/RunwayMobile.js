@@ -25,9 +25,9 @@ const RunwayMobile = ({ products }) => {
               covered this fall.{" "}
             </p>
             <div className="btn-container">
-              <button className="explore-button">
-                <NavLink to="/fallessentials">Explore</NavLink>
-              </button>
+              <NavLink className="explore-button" to="/fallessentials">
+                Explore
+              </NavLink>
             </div>
           </div>
         </div>

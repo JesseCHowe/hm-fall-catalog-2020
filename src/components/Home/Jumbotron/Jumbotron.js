@@ -4,7 +4,7 @@ import "./Jumbotron.scss";
 const Jumbotron = () => {
   return (
     <div id="jumbotron">
-      <video autoPlay muted loop>
+      <video autoPlay muted loop playsInline>
         <source
           src={require("../../../assets/video/party.mp4")}
           type="video/mp4"
